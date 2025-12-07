@@ -1,8 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 exports.parseRFPRequirement = async (text) => {
   const prompt = `
     You are an AI assistant for a procurement system. 
@@ -22,13 +21,14 @@ exports.parseRFPRequirement = async (text) => {
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const textResponse = response.text();
-
+    console.log(textResponse);
     const jsonString = textResponse
       .replace(/```json/g, "")
       .replace(/```/g, "")
       .trim();
     return JSON.parse(jsonString);
   } catch (error) {
+    console.log(textResponse);
     throw new Error("Failed to parse requirements with AI");
   }
 };

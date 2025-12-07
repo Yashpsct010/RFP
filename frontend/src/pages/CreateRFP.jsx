@@ -77,7 +77,7 @@ function CreateRFP() {
                         <button
                             onClick={handleGenerate}
                             disabled={loading || !input}
-                            className={`px-6 py-2.5 rounded-lg text-white font-medium flex items-center shadow-sm transition-all ${loading || !input
+                            className={`px-6 py-2.5 rounded-lg text-black font-medium flex items-center shadow-sm transition-all ${loading || !input
                                     ? 'bg-slate-300 cursor-not-allowed'
                                     : 'bg-primary-600 hover:bg-primary-700 hover:shadow-md'
                                 }`}
