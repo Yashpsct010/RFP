@@ -8,6 +8,7 @@ const rfpSchema = new mongoose.Schema({
   deadline: { type: Date },
   status: { type: String, enum: ["Draft", "Sent", "Closed"], default: "Draft" },
   vendors: [{ type: mongoose.Schema.Types.ObjectId, ref: "Vendor" }],
+  lastSentAt: { type: Date },
   createdAt: { type: Date, default: Date.now },
 });
 

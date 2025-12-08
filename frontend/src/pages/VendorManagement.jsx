@@ -72,7 +72,8 @@ function VendorManagement() {
                 </div>
                 <button
                     onClick={() => setIsAdding(!isAdding)}
-                    className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg flex items-center shadow-sm transition-colors"
+                    className="bg-primary-600 hover:bg-primary-700 text-black px-4 py-2 rounded-lg flex items-center shadow-sm transition-colors"
+
                 >
                     <Plus size={18} className={`mr-2 transition-transform ${isAdding ? 'rotate-45' : ''}`} />
                     {isAdding ? 'Cancel' : 'Add Vendor'}
@@ -148,7 +149,8 @@ function VendorManagement() {
                                     <button
                                         type="submit"
                                         disabled={loading}
-                                        className="px-6 py-2.5 bg-primary-600 text-white rounded-lg hover:bg-primary-700 font-medium shadow-sm transition-all"
+                                        className="px-6 py-2.5 bg-primary-600 text-black rounded-lg hover:bg-primary-700 font-medium shadow-sm transition-all"
+
                                     >
                                         {loading ? 'Adding...' : 'Save Vendor'}
                                     </button>

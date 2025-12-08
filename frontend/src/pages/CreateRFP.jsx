@@ -78,8 +78,8 @@ function CreateRFP() {
                             onClick={handleGenerate}
                             disabled={loading || !input}
                             className={`px-6 py-2.5 rounded-lg text-black font-medium flex items-center shadow-sm transition-all ${loading || !input
-                                    ? 'bg-slate-300 cursor-not-allowed'
-                                    : 'bg-primary-600 hover:bg-primary-700 hover:shadow-md'
+                                ? 'bg-slate-300 cursor-not-allowed'
+                                : 'bg-primary-600 hover:bg-primary-700 hover:shadow-md'
                                 }`}
                         >
                             <Wand2 size={18} className={`mr-2 ${loading ? 'animate-spin' : ''}`} />
@@ -105,7 +105,7 @@ function CreateRFP() {
                                 <div className="space-y-4 mb-6">
                                     <div className="flex justify-between py-2 border-b border-slate-100">
                                         <span className="text-slate-500">Budget</span>
-                                        <span className="font-medium text-slate-900">{structuredData.budget ? `$${structuredData.budget.toLocaleString()}` : 'N/A'}</span>
+                                        <span className="font-medium text-slate-900">{structuredData.budget ? `₹ ${structuredData.budget.toLocaleString()}` : 'N/A'}</span>
                                     </div>
                                     <div className="flex justify-between py-2 border-b border-slate-100">
                                         <span className="text-slate-500">Deadline</span>

@@ -214,7 +214,8 @@ function RFPDetail({ rfpId, onBack }) {
                             <button
                                 onClick={handleSend}
                                 disabled={sending || selectedVendors.length === 0}
-                                className={`px-4 py-2 rounded-lg text-white font-medium text-sm flex items-center shadow-sm transition-all ${sending || selectedVendors.length === 0
+                                className={`px-4 py-2 rounded-lg text-black font-medium text-sm flex items-center shadow-sm transition-all ${sending || selectedVendors.length === 0
+
                                     ? 'bg-slate-300 cursor-not-allowed'
                                     : 'bg-primary-600 hover:bg-primary-700 hover:shadow-md'
                                     }`}
@@ -247,7 +248,8 @@ function RFPDetail({ rfpId, onBack }) {
                             <button
                                 onClick={handleCheckResponses}
                                 disabled={checking}
-                                className={`w-full px-4 py-2.5 rounded-lg text-white font-medium text-sm flex justify-center items-center shadow-sm transition-all ${checking
+                                className={`w-full px-4 py-2.5 rounded-lg text-black font-medium text-sm flex justify-center items-center shadow-sm transition-all ${checking
+
                                     ? 'bg-slate-400 cursor-wait'
                                     : 'bg-indigo-600 hover:bg-indigo-700 hover:shadow'
                                     }`}
@@ -262,7 +264,8 @@ function RFPDetail({ rfpId, onBack }) {
                             {proposals.length > 0 && (
                                 <button
                                     onClick={() => setShowComparison(true)}
-                                    className="w-full px-4 py-2.5 rounded-lg text-white font-medium text-sm bg-emerald-600 hover:bg-emerald-700 flex justify-center items-center shadow-sm hover:shadow transition-all"
+                                    className="w-full px-4 py-2.5 rounded-lg text-black font-medium text-sm bg-emerald-600 hover:bg-emerald-700 flex justify-center items-center shadow-sm hover:shadow transition-all"
+
                                 >
                                     <BarChart2 size={16} className="mr-2" /> Compare Proposals
                                 </button>

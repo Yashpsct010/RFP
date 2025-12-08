@@ -16,7 +16,7 @@ A single-user web application to streamline the Request for Proposal (RFP) proce
 
 - **Frontend**: React, Vite, TailwindCSS
 - **Backend**: Node.js, Express, MongoDB
-- **AI**: Google Gemini API (`gemini-1.5-flash`)
+- **AI**: Google Gemini API (`gemini-2.5-flash`)
 - **Email**: Nodemailer (SMTP), imap-simple (IMAP)
 
 ## Prerequisites
