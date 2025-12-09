@@ -5,7 +5,6 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const FALLBACK_MODELS = [
   "gemini-2.5-flash-lite",
   "gemini-2.5-flash",
-  "gemini-2.5-flash-tts",
 ];
 
 // Helper to extract JSON from text (handles Markdown codes and conversational fluff)
